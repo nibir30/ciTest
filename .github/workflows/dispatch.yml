@@ -10,9 +10,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           curl --request GET \
-          --url "https://api.github.com/repos/octocat/Spoon-Knife/issues" \
+          --url "https://api.github.com/nibir30/ciTest/dispatches" \
           --header "Accept: application/vnd.github+json" \
-          --header "Authorization: Bearer $GH_TOKEN"
+          --header "Authorization: Bearer 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"
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build apk --release
